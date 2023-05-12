@@ -421,7 +421,9 @@ for i in hole_id:
         else:
             new_row = {'hole_id': i,'from': from_1,'to': to_1, 'Oj1': 0, 'Jr1': '', 'Oj2': 0, 'Jr2': '', 'Oj3': 0, 'Jr3': '', 'Selected Jr': ''}
             QJr = QJr.append(new_row,ignore_index=True)
-QJr.to_csv('QJr_export.csv')
+csv = QJr.to_csv('QJr_export.csv')
+
+st.download_button("Press to Download",csv,"file.csv","text/csv",key='download-csv')
 print('Data Export Complete')
 
 
