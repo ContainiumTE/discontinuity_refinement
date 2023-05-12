@@ -33,13 +33,13 @@ if choice == "Home":
     data_file = st.file_uploader("Upload CSV", type=["csv"])
 
     if data_file is not None:
-        st.write(type(data_file))
-        df_rmr = pd.read_csv(data_file)
+        #st.write(type(data_file))
+        #df_rmr = pd.read_csv(data_file)
 
 
 # In[50]:
 
-
+df_rmr = pd.read_csv(data_file)
 #df_rmr = pd.read_csv('Qjr_selection.csv')
 pd.set_option('display.max_columns',500)
 pd.set_option('display.max_rows',500)
@@ -426,7 +426,7 @@ def convert_df(QJr):
     return QJr.to_csv(index=False).encode('utf-8')
 csv = convert_df(QJr)
 
-st.download_button("Press to Download",csv,"file.csv","text/csv",key='download-csv')
+st.download_button("Press to Download",csv,"discontinuity_weighting.csv","text/csv",key='download-csv')
 print('Data Export Complete')
 
 
