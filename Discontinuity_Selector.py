@@ -24,7 +24,7 @@ github_session.auth = (username,token)
 
 
 st.title("Discontinuity Weighting Tool")
-
+url = ""
 df_header = pd.read_csv("table_header.csv")
 
 menu = ["Home","Other"]
