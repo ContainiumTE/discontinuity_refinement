@@ -13,7 +13,7 @@ import requests
 
 
 username = 'ContainiumTE'
-token = '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'
+token = 'RRopW0EJvVEcfS5EGt1rxxswfGF5IfzU3Bh4VkPHS10'
 
 github_session = requests.Session()
 github_session.auth = (username,token)
