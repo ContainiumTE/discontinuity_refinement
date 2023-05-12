@@ -34,12 +34,11 @@ if choice == "Home":
 
     if data_file is not None:
         #st.write(type(data_file))
-        #df_rmr = pd.read_csv(data_file)
+        df_rmr = pd.read_csv(data_file)
 
 
 # In[50]:
 
-df_rmr = pd.read_csv(data_file)
 #df_rmr = pd.read_csv('Qjr_selection.csv')
 pd.set_option('display.max_columns',500)
 pd.set_option('display.max_rows',500)
