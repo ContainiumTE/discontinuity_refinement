@@ -24,7 +24,7 @@ github_session.auth = (username,token)
 
 
 st.title("Discontinuity Weighting Tool")
-url = ""
+url = "https://raw.githubusercontent.com/ContainiumTE/discontinuity_refinement/main/table_header.csv"
 df_header = pd.read_csv("table_header.csv")
 
 menu = ["Home","Other"]
