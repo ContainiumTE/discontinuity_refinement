@@ -25,11 +25,15 @@ github_session.auth = (username,token)
 
 st.title("Discontinuity Weighting Tool")
 
+df_header = pd.read_csv("table_header.csv")
+
 menu = ["Home","Other"]
 choice = st.sidebar.selectbox("Menu",menu)
 
 if choice == "Home":
     st.subheader("Home")
+    st.subheader("Import Table format with Headers as follows:")
+    st.table(df_header)
     data_file = st.file_uploader("Upload CSV", type=["csv"])
 
     if data_file is not None:
